@@ -1,9 +1,9 @@
 package edu.epam.composite_chain.chain.impl;
 
 import edu.epam.composite_chain.chain.BaseInterface;
-import edu.epam.composite_chain.composite.IPart;
+
 import edu.epam.composite_chain.composite.impl.CompositePart;
-import edu.epam.composite_chain.composite.impl.LeafPart;
+
 import edu.epam.composite_chain.exception.ParserException;
 
 import java.util.regex.Matcher;

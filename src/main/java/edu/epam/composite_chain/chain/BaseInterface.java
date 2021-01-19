@@ -13,5 +13,4 @@ public interface BaseInterface {
     String REGEX_SENTENCE = "(?<=[!|?|.{1-3}]\\s)";
     String REGEX_WORD_AND_SIGN = "\\s+\\S+[^\\s]+";
     String REGEX_SYMBOL = "";
- //   "\\s{3}[^\\t]+";\r\f\n /^\s*$/   "\\s+[^[\\.+\\s]]|[^[!\\s]]|[^[\\?\\s]]+";    "(?<=[!|?|.{1-3}]\\s)";
 }

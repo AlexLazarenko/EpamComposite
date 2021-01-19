@@ -5,8 +5,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class TextFileReader {
     private static final Logger logger = LogManager.getLogger(TextFileReader.class);
@@ -17,13 +15,13 @@ public class TextFileReader {
             FileInputStream inFile = new FileInputStream(PropertiesLoader.getProperty(dir));
             byte[] str = new byte[inFile.available()];
             inFile.read(str);
-            text = new String(str); // String with all text
-            // System.out.println(text);
+            text = new String(str);
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            logger.error(e);
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
+        logger.info("text readed " + text);
         return text;
     }
 }
